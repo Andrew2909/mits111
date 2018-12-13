@@ -100,6 +100,7 @@ $(document).ready(function() {
 		infinite: true,
 		slidesToScroll: 1,
 		arrows: true,
+		  variableWidth: true,
 		responsive: [
 		{
 			breakpoint: 800,
@@ -268,3 +269,13 @@ $(document).on('click', '.play_video', function (e) {
 });
 
 
+var $btns = $('.lab_check_page').click(function() {
+  if (this.id == 'all') {
+    $('.news_ul > li').fadeIn(450);
+  } else {
+    var $el = $('.' + this.id).fadeIn(450);
+    $('.news_ul > li').not($el).hide();
+  }
+  $btns.removeClass('lab_check_page_active');
+  $(this).addClass('lab_check_page_active');
+})
