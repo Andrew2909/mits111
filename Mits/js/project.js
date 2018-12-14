@@ -7,9 +7,9 @@ $(document).ready(function() {
 	// });
 
 
-	$('.zub_div').click(function(event) {
-		$('.zub_pod_ul').toggleClass('active_zub');
-	});
+	// $('.zub_div').click(function(event) {
+	// 	$('.zub_pod_ul').toggleClass('active_zub');
+	// });
 
 
 
@@ -186,10 +186,11 @@ $(document).ready(function() {
 
 $(".li_kit").click(function(e) {
   e.preventDefault();
-  $(this).toggleClass('li_active_services');
-if ($('.zub_pod_ul ').hasClass('active_zub')) {
-	$('.table_peredachi ').removeClass('table_peredachi_active')
-}
+  $('.li_kit').removeClass('li_active_services');
+  $(this).addClass('li_active_services');
+// if ($('.zub_pod_ul ').hasClass('active_zub')) {
+// 	$('.table_peredachi ').removeClass('table_peredachi_active')
+// }
 })
 
 

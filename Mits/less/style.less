@@ -11,19 +11,19 @@
 }
 
 .zub_div{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    height: 100%;
-    -webkit-box-direction: normal;
-    justify-content: center;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    z-index: 99999999;
-    position: relative;
-    align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	-webkit-box-orient: vertical;
+	height: 100%;
+	-webkit-box-direction: normal;
+	justify-content: center;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	z-index: 99999999;
+	position: relative;
+	align-items: center;
 }
 
 .login_cab>a{
@@ -276,7 +276,7 @@
 	line-height: 70px;
 	background: #fff;
 	top: 0;
-		transition: all 2s;
+	transition: all 2s;
 	.menu_destop li:after {
 		top: -34px!important;
 	}
@@ -284,7 +284,7 @@
 
 
 header{
-		box-shadow: 0 1px 0 0px #21212121;
+	box-shadow: 0 1px 0 0px #21212121;
 	padding-top: 36px;
 	height: 104px;
 	transition: all 2s;
@@ -582,7 +582,7 @@ header{
 
 	.index_bg1_video{
 		-webkit-clip-path: polygon(47% 0%, 100% 0%, 100% 100%, 26% 100%);
-	    clip-path: polygon(47% 0%, 100% 0%, 100% 100%, 26% 100%);
+		clip-path: polygon(47% 0%, 100% 0%, 100% 100%, 26% 100%);
 		background: rgba(0, 0, 0, 0.71);
 		width: 90%;
 		height: 480px;
@@ -829,48 +829,70 @@ header{
 
 
 
-.li_active_services{
-	transition: all  5s;
-	    background: #f5f5f5!important;
-	    &:hover{
-	    		background: @one_color!important;
-	    	 }
-	    	.img_hid_serv,.p_hid_serv{
-	   
-	display: none;
-}
-.show_services_ul_link{
-	display: block!important;
-	transition: all 1s;
-}
-
-&:after{
-    content: url(../img/Cross.svg);
-    display: block;
-    opacity: 0;
-    -webkit-transition: all 2s;
-    -o-transition: all 2s;
-    transition: all 2s;
-    position: absolute;
-    z-index: 9999;
-    margin-top: -59px;
-    margin-left: 60px;
+	.li_active_services{
+		transition: all  5s;
+		background: #f5f5f5!important;
+		.zub_pod_ul {
+			position: absolute;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			transform: scale(1)!important;
+			    margin-top: 0!important;
+			transition: all .5s;
+			height: auto!important;
+			li{
+				width: 228px!important;
+				height: 190px!important;
+				background: #f5f5f5;
+				margin-top: 382px!important;
+				&:hover{
+					background: @one_color;
+				}
 			}
-	&:hover{
-		cursor: pointer;
+
+		}
+		&:hover{
+			background: @one_color!important;
+		}
+		.img_hid_serv,.p_hid_serv{
+
+			display: none;
+		}
+		.show_services_ul_link{
+			display: block!important;
+			transition: all 1s;
+		}
+
+		&:after{
+			content: url(../img/Cross.svg);
+			display: block;
+			opacity: 0;
+			-webkit-transition: all 2s;
+			-o-transition: all 2s;
+			transition: all 2s;
+			position: absolute;
+			z-index: 9999;
+			margin-top: -59px;
+			margin-left: 60px;
+		}
+		&:hover{
+			cursor: pointer;
 			transition: all  5s;
 			// background: rgba(253, 203, 31, .50)!important;
-		&:after{
-			opacity: 1;
-			transition: all 3s;
+			&:after{
+				opacity: 1;
+				transition: all 3s;
 
 			}
-.show_services_ul_link{
-	opacity: .7;
-	transition: all 1s;
+			.show_services_ul_link{
+				opacity: .7;
+				transition: all 1s;
+			}
+		}
 	}
-}
-}
 
 
 	.services_bg1 .nav-tabs .active{
@@ -902,7 +924,7 @@ header{
 
 
 
-	
+
 
 
 
@@ -980,26 +1002,26 @@ header{
 
 
 
-		.zub_pod_ul{
-			transform: scale(0);
-			transition: all 1s;
-			height: 0;
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
+		// .zub_pod_ul{
+		// 	transform: scale(0);
+		// 	transition: all 1s;
+		// 	height: 0;
+		// 	display: -webkit-flex;
+		// 	display: -moz-flex;
+		// 	display: -ms-flex;
+		// 	display: -o-flex;
+		// 	display: flex;
 
 
-			li{
-				width: 228px!important;
-				height: 190px!important;
-				background: #f5f5f5;
-				    z-index: 9999999999999999999999999999999;
-    position: relative;
+		// 	li{
+		// 		width: 228px!important;
+		// 		height: 190px!important;
+		// 		background: #f5f5f5;
+		// 		z-index: 9999999999999999999999999999999;
+		// 		position: relative;
 				
-			}
-		}
+		// 	}
+		// }
 
 
 }//services_ul4
@@ -1432,7 +1454,7 @@ td, th{
 		}
 		button{
 			width: 162px;
-						position: relative;
+			position: relative;
 			height: 55px;
 			border: 0;
 			background-color: @one_color;
@@ -1455,8 +1477,8 @@ td, th{
 		align-items: center;
 		color: #9e9e9e;
 		label{
-				font-family:  "Formular"; 
-				font-weight: 100;
+			font-family:  "Formular"; 
+			font-weight: 100;
 		}
 		.lab_check_page{
 			font-family:  "Formular"; 
@@ -2072,7 +2094,7 @@ td, th{
 .news{
 	.lab_check_page_active{
 		background:@one_color!important;
-}
+	}
 	.container{
 		overflow: hidden;
 	}
@@ -2082,12 +2104,12 @@ td, th{
 		display: block!important;
 		margin-bottom: 71px;
 		li{
-				transition: all 1s;
-		&:hover{
-			box-shadow: inset 0 0 0px 500px rgba(33, 33, 33, 0.56);
 			transition: all 1s;
-			cursor: pointer;
-		}
+			&:hover{
+				box-shadow: inset 0 0 0px 500px rgba(33, 33, 33, 0.56);
+				transition: all 1s;
+				cursor: pointer;
+			}
 		}
 	}
 	.block_filter_news{
@@ -2430,20 +2452,20 @@ td, th{
 
 @media only screen and (max-width:768px){
 
-.news .tile{
-	width: 100%;
-}
+	.news .tile{
+		width: 100%;
+	}
 
-.news .tile .title_slider_index {
-  font-size: 14px;
-    line-height: normal;
-}
+	.news .tile .title_slider_index {
+		font-size: 14px;
+		line-height: normal;
+	}
 
 
 
 	.services_bg1 .li_active_services:after {
-    margin-top: -0; 
-}
+		margin-top: -0; 
+	}
 
 
 	.code_img_input{
@@ -2842,17 +2864,17 @@ tr,th,td{
 }//480
 
 
- #map-canvas {
-        height: 500px;
-      width: 100%;
-        margin: 0px;
-        padding: 0px
-      }
-      #markerLayer img {
-        width: 85% !important;
-        height: 90% !important;
-        border-radius: 5px;
-      }
+#map-canvas {
+	height: 500px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px
+}
+#markerLayer img {
+	width: 85% !important;
+	height: 90% !important;
+	border-radius: 5px;
+}
 
    //    .gmnoprint{
    //    	div{
